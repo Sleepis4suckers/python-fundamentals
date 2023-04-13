@@ -2,70 +2,70 @@
 
 class House:
     def __init__(self, foundation_type: str, roof_style: str, door_color: str, window_size: int):
-        self._foundation_type = foundation_type
-        self._roof_style = roof_style
-        self._door_color = door_color
-        self._window_size = window_size
+        self.__foundation_type = foundation_type
+        self.__roof_style = roof_style
+        self.__door_color = door_color
+        self.__window_size = window_size
 
 
     @property
     def foundation(self) -> str:
-        return self._foundation_type
+        return self.__foundation_type
 
 
     @foundation.setter
     def foundation(self, foundation_type:str):
-        self._foundation_type = foundation_type
+        self.__foundation_type = foundation_type
 
 
     @property
     def roof(self) -> str:
-        return self._roof_style
+        return self.__roof_style
 
     @roof.setter
     def roof(self, roof_style):
-        self._roof_style = roof_style
+        self.__roof_style = roof_style
 
 
     @property
     def door_color(self) -> str:
-        return self._door_color
+        return self.__door_color
 
     @door_color.setter
     def door_color(self, color):
-        self._door_color = color
+        self.__door_color = color
 
 
     @property
     def window_size(self) -> int:
-        return self._window_size
+        return self.__window_size
 
     @window_size.setter
     def window_size(self, size):
-        self._window_size = size
+        self.__window_size = size
 
 
     def door_function(self):
-        print(f'The {self._door_color} door is open')
+        print(f'The {self.__door_color} door is open')
 
 
 
 class Condo(House):
     def __init__(self, foundation_type: str, roof_style: str, door_color: str, window_size: int, balcony: str):
         super().__init__(foundation_type, roof_style, door_color, window_size)
-        self._balcony = balcony
+        self.__balcony = balcony
 
 
     @property
     def balcony(self) -> str:
-        return self._balcony
+        return self.__balcony
 
     @balcony.setter
     def balcony(self, balcony_style: str):
-        self._balcony = balcony_style
+        self.__balcony = balcony_style
 
     def maintenance(self):
-        print(f'We will be up to fix your {self._balcony} balcony')
+        print(f'We will be up to fix your {self.__balcony} balcony')
 
 
 

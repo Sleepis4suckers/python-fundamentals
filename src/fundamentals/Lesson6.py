@@ -53,7 +53,7 @@ def basic_else(score: int) -> str:
         return 'Score is less than 10'
 
 
-# print(basic_else(12))
+print(basic_else(12))
 
 
 def basic_elif(value2: int):
@@ -166,4 +166,4 @@ def basic_logical_or(value1: int, value2: int) -> str:
         return 'value1 is not greater than 5 and value2 is greater than 20'
 
 
-print(basic_logical_or(14, 15))
+# print(basic_logical_or(14, 15))
